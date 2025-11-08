@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secured REST End-Points Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div>
+    <p>
+        <button id="execGETBtn">Execute Secure GET</button>
+    </p>
+    <p>
+        <button id="execPOSTBtn">Execute Secure POST</button>
+    </p>
+    <p>
+        <button id="execPUTBtn">Execute Secure PUT</button>
+    </p>
+    <p>
+        <button id="execDELETEBtn">Execute Secure DELETE</button>
+    </p>
+    <p>
+        <label for="resultView">Result</label>
+        <textarea id="resultView" rows="10" cols="80"></textarea>
+    </p>
+    <p>
+        <button id="logoutBtn">Logout</button>
+    </p>
+</div>
+
+<script type="application/javascript" src="script/app-constants.js"></script>
+<script type="application/javascript" src="script/rest-util.js"></script>
+<script type="application/javascript" src="script/protected.js"></script>
+</body>
+</html>
