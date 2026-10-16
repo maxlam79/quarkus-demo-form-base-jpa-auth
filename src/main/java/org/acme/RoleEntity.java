@@ -5,7 +5,7 @@ import io.quarkus.security.jpa.RolesValue;
 import jakarta.persistence.*;
 
 @Entity
-@Table( name = "t_role" )
+@Table( name = "roles" )
 public class RoleEntity extends PanacheEntityBase {
 
     @Id

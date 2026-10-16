@@ -34,6 +34,8 @@ loginForm.addEventListener( 'submit', ( e ) => {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }, body: formData.toString()
         } ).then( resp => {
+            console.log( resp );
+
             if ( !resp.ok ) {
                 var msg = `Authentication failed with status: ${ resp.status }`;
 
@@ -50,9 +52,3 @@ loginForm.addEventListener( 'submit', ( e ) => {
 
     }
 } );
-
-function hasCookie( name ) {
-    // Create a regex to match the cookie name followed by '=' and at least one character
-    const regex = new RegExp( `(?:^|;\\s*)${name}=([^;]+)` );
-    return regex.test( document.cookie );
-}

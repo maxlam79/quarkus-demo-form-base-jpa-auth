@@ -11,7 +11,7 @@ import java.util.List;
 
 @Entity
 @UserDefinition
-@Table( name = "t_user" )
+@Table( name = "users" )
 public class UserEntity extends PanacheEntityBase {
 
     @Id
@@ -29,7 +29,7 @@ public class UserEntity extends PanacheEntityBase {
 
     @ManyToMany( fetch = FetchType.EAGER )
     @JoinTable(
-            name = "t_user_role_map",
+            name = "users_roles_map",
             joinColumns = @JoinColumn( name = "user_id" ),
             inverseJoinColumns = @JoinColumn( name = "role_id" )
     )
